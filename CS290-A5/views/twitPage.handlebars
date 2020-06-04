@@ -1,0 +1,12 @@
+{{>header}}
+
+
+<main class="twit-container" id="container">
+  {{#each allTwits}}
+      {{> twitCard}}
+  {{/each}}
+</main>
+
+{{#if showAddTwitModal}}
+  {{> addTwitModal}}
+{{/if}}
